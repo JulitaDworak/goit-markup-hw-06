@@ -418,13 +418,84 @@
         </div>
         </div>
         </div>
+
+        <form class="footer-form">
+            <label class="footer-label" for="email">zapisz się do newslettera
+                <input class="footer-input" type="email" name="email" id="email" placeholder="E-mail">
+            </label>
+            <bottom class="send-btn-newsletter" type="submit">Zapisz się 
+                <svg class="send-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-iconsend"></use>
+                </svg>
+            </bottom>
+                </form>
+            
+
     </footer>
 </div>
 </div>
 
 <div class="overlay is-hidden" data-modal>       
     <div class="modal " >  
-        <button data-modal-close class="close-btn" type="button" >
+        <form class="form-modal">
+<h3 class="form-modal-name"> Zostaw swoje dane w formularzu poniżej</h3>
+
+<label> Imie </label>
+<div class="form-inputs">
+    <input class="name-input" type="name"  name="name" placeholder="" />
+    <svg class="form-icon-person" width="12" height="12"> 
+        <use href="./images/icons.svg#icon-person-black-18dp-1"> </use>
+    </svg>
+</div>
+
+
+<label>
+    Telefon 
+    <div class="form-inputs">
+    <input type="telephone"  name="phone" placeholder="" />
+    <svg class="form-icon-phone" width="13" height="13"> 
+        <use href="./images/icons.svg#icon-phone-black-18dp-1"> </use>
+    </svg>
+</div>
+</label>
+<label>
+    Email 
+    <div class="form-inputs">
+    <input type="mail"  name="mail" placeholder="" />
+    <svg class="form-icon-mail" width="15" height="12"> 
+        <use href="./images/icons.svg#icon-email-black-18dp-1"> </use>
+    </svg>
+</div>
+</label>
+<label >
+    Komentarz 
+    <div class="form-inputs-comment">
+       
+    <input  type="text"  name="comment" placeholder="Wprowadź tekst" />
+</div>
+</label>
+<label >
+
+<div class="chbx-form">
+    <div class="chbx-priv-accept">
+        <input type="checkbox"></input> 
+    <svg width="16" height="15">   
+        <use href="./images/icons.svg#icon-icon-check"></use>
+    </svg>
+    </div>
+    Oświadczam iż akceptuję  <span class="modal-span"> Regulamin </span> i <span class="modal-span"> Politykę prywatności</span>
+</div>
+</label>
+
+<button class="submit-btn" type="submit" class="submit-btn">Wyślij</button>
+
+        </form>
+        <button  data-modal-close class="close-btn" type="button" >
+            <svg class="close-icon" width="15" height="15">
+                <use href="./images/icons.svg#icon-x">
+
+                </use>
+            </svg>
             <span class="close-x">X</span>
             </button>
     </div>
