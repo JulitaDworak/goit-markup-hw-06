@@ -226,21 +226,36 @@ position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  transition-property: fill, color, border;
+transition-duration: default;
+transition-timing-function: default;
+transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-contact:hover a svg{
   fill: #2196f3;
-  box-sizing: border-box;
 }
+
+.nav-contact a:focus+svg{
+  fill: #2196f3;
+}
+
+/* .nav-contact:focus a{
+  fill: #2196f3;
+  box-sizing: border-box;
+} */
 
 .nav-contact-mail-icon{
 margin: 0px 10px 0px 0px;
 fill:#757575;
 }
-.nav-contact-mail-icon:hover{
+/* .nav-contact-mail-icon:hover {
   fill: #2196f3;
   } 
+
+   .nav-contact-mail-icon:focus {
+      fill: #2196f3;
+      }  */
 
 .contact-email {
   display: flex;
@@ -248,9 +263,7 @@ fill:#757575;
   font-weight: var(--nav-font-weight);
   font-size: var(--nav-font-size);
   line-height: var(--nav-line-height);
-  color: var(--nav-color-email-tel);
-
-
+  color: var(--nav-color-email-tel);  
 }
 
 
@@ -395,12 +408,6 @@ display: flex;
   top:6px;
   right:9px;
 }
-/* .close-icon{
-position: absolute;
-fill:#212121;
-top:8px;
-right: 6px;
-} */
 
 label{
   display: block;
@@ -409,84 +416,50 @@ label{
   font-size: 12px;
   line-height: 1.16;
   position: relative;
-  
-  /* margin-left: 40px; */
+
 }
 
-
-/* .form-inputs input {
-  position: relative;
-  box-sizing: border-box;
-  display: block;
-  align-items: center;
-  width: 448px;
-  height: 40px;
-  font-size: 16px;
-  padding: 0 0 0 42px;
-  color: #212121;
- border: 1px solid rgba(33, 33, 33, 0.2);
- border-radius: 4px;
- outline: none;
- transition-property: fill, color, border;
- transition-duration: default;
- transition-timing-function: default;
-} */
 
 .form-inputs input{
 position: relative;
 box-sizing: border-box;
-display: flex;
+display: block;
 border: none;
 outline: none;
-position: relative;
-align-items: center;
-justify-content: center;
-text-align: left;
+border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 padding: 0 0 0 42px;
 outline: none;
 width: 448px;
 height: 40px;
+font-size: 14px;
 transition-property: fill, color, border;
 transition-duration: default;
 transition-timing-function: default;
 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-inputs{
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  box-sizing: border-box;
 }
 
 .form-inputs svg{
   transition-property: fill;
   transition-duration: default;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
+
+.form-inputs:hover input {
+  border:1px solid #2196F3
 }
 
-.form-inputs:hover{
-  fill: #2196F3;
-  outline: none;
-  border:1px solid #2196F3;
-  border-radius: 4px;
-  box-sizing: border-box;
-} 
-.form-inputs input:focus{
-  fill: #2196F3;
-  border:1px solid #2196F3;
-  box-sizing: border-box;
-} 
+.form-inputs input:hover+svg {
+  fill:#2196F3
+}
 
-
-.form-inputs:hover +svg{
-  fill: #2196F3;
-  outline: none;
+.form-inputs input:focus {
   border:1px solid #2196F3;
-  border-radius: 4px;
-} 
-.form-inputs input:focus +svg{
-  fill: #2196F3;
-  outline: none;
+}
+
+.form-inputs input:focus+svg {
+  fill:#2196F3;
 }
 
 
@@ -547,13 +520,13 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   padding: 12px 16px;
   margin: 0;
-  box-sizing: border-box;
   color: #212121;
  border: 1px solid rgba(33, 33, 33, 0.2);
  outline: none;  
  transition-property: fill, color, border;
   transition-duration: default;
   transition-timing-function: default;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow-wrap:break-word;
 }
 
@@ -1177,18 +1150,24 @@ left: 50px;
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
   margin-right: 8px;
+  transition-property: fill, color, border;
+transition-duration: default;
+transition-timing-function: default;
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   
 }
 
 .filter-btn:focus {
   color: var(--focus-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  outline: none ;
 
 }
 .filter-btn:hover {
   background-color: var(--hover-color);
   color: var(--filter-btn-click-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  outline: none ;
 }
 .link:focus {
   color: var(--focus-color);
