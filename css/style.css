@@ -226,16 +226,6 @@ transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-/* .nav-contact:hover a svg{
-  fill: #2196f3;
-  outline: none;
-}
-
-.nav-contact a:focus+svg{
-  fill: #2196f3;
-  outline: none;  
-} */
-
 .nav-contact-mail-icon{
 margin: 0px 10px 0px 0px;
 fill:#757575;
@@ -348,6 +338,7 @@ margin-bottom: 104px;
   border-radius: 4px;
   color: var(--order-btn-color);
   cursor: pointer;
+  outline: none;
 }
 
 /* Okno modalne */
@@ -374,7 +365,7 @@ padding: 12px 40px 20px 40px;
 margin: 0;
 }
 
-/* @keyframes scale{
+@keyframes scale{
   0%{
     transform:scale(0.5)
   }
@@ -386,7 +377,7 @@ margin: 0;
   100%{
     transform: scale(1);
   }
-} */
+}
 
 .overlay{
   background-color:rgba(0, 0, 0, 0.25) ;
@@ -438,20 +429,15 @@ label{
 
 }
 
-.form-inputs{
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-outline: none;
-}
-
 .form-inputs input{
 position: relative;
 box-sizing: border-box;
 display: block;
 outline: none;
 border: none;
-/* border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px; */
+width:100%;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
 padding: 14px 40px 15px 42px;
 outline: none;
 font-size: 14px;
@@ -465,7 +451,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill:#2196F3
 }
 
-.form-inputs:hover {
+.form-inputs input:hover {
   border:1px solid #2196F3;
   border-radius:4px;
 }
@@ -477,23 +463,19 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
-/* .form-inputs:hover input {
-  border:1px solid #2196F3;
-  border-radius:4px;
-}
 
 .form-inputs input:hover+svg {
   fill:#2196F3
-} */
+} 
 
-.form-inputs:focus{
+.form-inputs input:focus{
   border:1px solid #2196F3;
   border-radius: 4px;
 }
 
 .form-inputs input:focus+svg {
   fill:#2196F3;
-}
+} 
 
 
 .submit-btn{
@@ -535,17 +517,8 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0;
   position: absolute;
   top: 40px;
-}
-
-.comment{
-  /* width: 448px;
-  height: 120px; */
-}
-
-.form-inputs-comment{
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  outline: none;  
-  border-radius: 4px;
+  width: 100%;
+  padding: 0px 40px 0 40px;
 }
 
 .form-inputs-comment input {
@@ -554,33 +527,13 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   border: none;
   height: 120px;
+  width:100%;
   font-size: 16px;
-  /* border: 1px solid rgba(33, 33, 33, 0.2);
-  outline: none;  
-  border-radius: 4px; */
-  transition-property: fill, color, border;
-  transition-duration: default;
-  transition-timing-function: default;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-wrap:break-word;
-  outline: none;
-  padding: 12px 16px;
-  margin: 0;
-  color: #212121;
-}
-
-/* .form-inputs-comment input {
-  position: relative;
-  box-sizing: border-box;
-  display: block;
-  border: none;
-  height: 120px;
-  font-size: 16px;
-  border-radius: 4px;
   padding: 12px 16px;
   margin: 0;
   color: #212121;
  border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
  outline: none;  
  transition-property: fill, color, border;
   transition-duration: default;
@@ -588,17 +541,16 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow-wrap:break-word;
   outline: none;
-} */
+}
 
-.form-inputs-comment:hover  {
-  fill:#2196F3;
+.form-inputs-comment input:hover {
   border: 1px solid #2196F3;
   border-radius: 4px;
 }
-.form-inputs-comment input:focus  {
+
+.form-inputs-comment input:focus{
   fill:#2196F3;
   border: 1px solid #2196F3;
-
 }
 
 ::placeholder{
@@ -625,7 +577,7 @@ letter-spacing: 3%;
 .form-icon-person{
   position: absolute;
   top: 62px;
-  left: 12px;
+  left: 55px;
   
 }
 
@@ -748,13 +700,7 @@ justify-content: center;
   margin-bottom: 50px;
   margin-top: 0;
 }
-/* .what-we-do-description p{
-  position:absolute;
-  text-align: center;
-  color: #ffffff;
-  background-color: aquamarine;
-  padding: 27px 90px;
-} */
+
 .products-description{
   position: relative;
 }
@@ -849,7 +795,6 @@ justify-content: center;
   align-items: center;
   margin: 10px 62px 0px 61px;
   display: block;
-  /* width: 171px; */
   justify-content: center;
   flex-wrap: nowrap;
 }
@@ -968,18 +913,6 @@ Letter-spacing: 3%
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .client-icons-container a{
-  padding: 17px 32px 14px 32px;
-  border: 1px rgba(175, 177, 184, 1) solid;
-  border-radius: 4px;
-  margin-top: 50px;
-  transition-property: fill, border;
-  transition-delay: default;
-  transition-duration: default;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none;
-} */
-
 .client-icons-container a{
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
@@ -989,7 +922,6 @@ Letter-spacing: 3%
   padding-top:66px ;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
-
 }
 
 
@@ -1006,36 +938,6 @@ Letter-spacing: 3%
 .client-icons-container a:focus{
     border:1px solid #2196F3;
 }
-
-
-/* .client-icons-container a{
-  outline: none;
-}
-
-.client-icons-container:focus+svg{
-  fill:#2196F3;
-}
-
-.client-icons-container:hover{
-  border: 1px rgba(33, 150, 243, 1) solid;
-  cursor: pointer;
-}
-
-
-.client-icons-container:focus{
-  border: 1px rgba(33, 150, 243, 1) solid;
-  */
-/* .client-icons-container:focus{
-  fill:#2196F3;
-  cursor: pointer;
-}
-
-
-.client-icons:hover, 
-.client-icons:focus{
-  fill:rgba(33, 150, 243, 1);
-  cursor: pointer;
-} */
 
 
 .logo-footer {
@@ -1204,19 +1106,13 @@ display: flex;
       width: 358px;
       height: 50px;
       border: 1px solid rgba(255, 255, 255, 0.3);
-      /* padding: 0; */
       background-color: #2F303A;
       border-radius: 4px;
       padding-left: 12px;
       outline: none;
       color: rgba(255, 255, 255, 0.6);
   }
- /* ::placeholder{
-    position: absolute;
-    top:100px;
-left: 50px;
-  padding: 15px 295px 15px 16px; 
-  } */
+
   
   .send-btn-newsletter{
   display: flex;
@@ -1226,7 +1122,7 @@ left: 50px;
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  margin-top: 44px;
+  margin-top: 46px;
   font-family: 'Roboto', sans-serif;;
   font-style: bold;
   font-weight: 700;
