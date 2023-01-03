@@ -344,17 +344,11 @@ margin-bottom: 104px;
 /* Okno modalne */
 .modal{
   position:relative;
-  animation: scale;
-  animation-duration: 1500ms;
-  animation-delay: 2s;
-  animation-timing-function:linear;
   width: 528px;
   height: 581px;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
-  transition-property:visibility, opacity, transform;
-  transition-duration: 2s;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -367,12 +361,12 @@ margin: 0;
 
 @keyframes scale{
   0%{
-    transform:scale(0.5)
+    transform:scale(0.0)
   }
-
-  50%{
+ 
+ 50%{
     transform:scale(0.75)
-  }
+  } 
 
   100%{
     transform: scale(1);
@@ -389,6 +383,12 @@ margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: scale;
+  /* animation-duration: 5000ms;
+  animation-delay: 1s;
+  animation-timing-function:linear; */
+  transition-property:visibility, opacity, transform, background-color;
+  transition-duration: 1500ms;
 }
 
 
